@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,95 +16,123 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f8faf8;
-  color: #173c2c;
+  background: #faf9f4;
+  color: #173d2d;
 }
 
 header {
   background: #075b40;
   color: white;
-  text-align: center;
-  padding: 30px 15px;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-nav {
-  background: #06452f;
-  padding: 15px;
-  text-align: center;
+.logo {
+  font-size: 21px;
+  font-weight: bold;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 10px;
-  font-weight: bold;
+  margin-left: 18px;
 }
 
 .hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: #e6f2e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 75px 7%;
+  flex-wrap: wrap;
 }
 
-.hero h2 {
-  font-size: 34px;
+.hero-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  line-height: 1.25;
   margin-bottom: 20px;
 }
 
-.hero p {
-  font-size: 18px;
-  line-height: 1.6;
+.hero-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #52665a;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 18px;
 }
 
 .btn {
   display: inline-block;
   background: #08734e;
   color: white;
-  padding: 14px 25px;
-  margin-top: 25px;
-  border-radius: 6px;
   text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 7px;
+  margin-top: 25px;
 }
 
-section {
-  padding: 50px 20px;
+.btn:hover {
+  background: #06452f;
+}
+
+.section {
   text-align: center;
+  padding: 55px 20px;
 }
 
-section h2 {
+.section h2 {
+  font-size: 30px;
   margin-bottom: 20px;
-  color: #075b40;
 }
 
 .course {
+  display: inline-block;
   background: white;
-  max-width: 350px;
-  margin: 15px auto;
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px #ddd;
+  margin: 12px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #ddd;
 }
 
 footer {
   background: #075b40;
   color: white;
-  text-align: center;
   padding: 25px;
+  text-align: center;
 }
 
 @media(max-width:600px) {
-  .hero h2 {
-    font-size: 27px;
+  header {
+    justify-content: center;
+    text-align: center;
   }
 
   nav a {
-    margin: 6px;
-    font-size: 14px;
+    margin: 7px;
+    display: inline-block;
+  }
+
+  .hero {
+    padding: 45px 6%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
   }
 }
 </style>
@@ -114,32 +141,42 @@ footer {
 <body>
 
 <header>
-  <h1>Noor International Quran Academy</h1>
-  <p>Learn Quran Online With Expert Teachers</p>
+  <div class="logo">☪ Noor International Quran Academy</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About Us</a>
-  <a href="#courses">Courses</a>
-  <a href="#contact">Contact</a>
-</nav>
+<section class="hero" id="home">
 
-<div class="hero" id="home">
-  <h2>Welcome to Noor International Quran Academy</h2>
-  <p>Learn Quran, Tajweed and Islamic Studies Online.</p>
-  <a class="btn" href="#contact">Join Our Academy</a>
-</div>
+  <div class="hero-text">
+    <h1>Learn the Holy Quran From Anywhere</h1>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>
-    We provide online Quran education for children
-    and adults with dedicated teachers.
-  </p>
+    <p>
+      Welcome to Noor International Quran Academy.
+      Learn Quran Reading, Tajweed and Islamic Studies
+      with dedicated online teachers.
+    </p>
+
+    <a class="btn" href="#contact">Join Now</a>
+    <a class="btn" href="#courses">Our Courses</a>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=900"
+    alt="Holy Quran">
 </section>
 
-<section id="courses">
+<section class="section" id="about">
+  <h2>Welcome to Our Academy</h2>
+  <p>Online Quran education for children and adults.</p>
+</section>
+
+<section class="section" id="courses">
   <h2>Our Courses</h2>
 
   <div class="course">
@@ -148,30 +185,27 @@ footer {
   </div>
 
   <div class="course">
-    <h3>Tajweed Course</h3>
+    <h3>Tajweed</h3>
     <p>Learn correct Quran pronunciation.</p>
   </div>
 
   <div class="course">
-    <h3>Hifz Course</h3>
+    <h3>Hifz</h3>
     <p>Memorise the Holy Quran.</p>
-  </div>
-
-  <div class="course">
-    <h3>Islamic Studies</h3>
-    <p>Learn basic Islamic knowledge.</p>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Contact us to join our online Quran classes.</p>
-  <p>WhatsApp number will be added soon.</p>
+<section class="section" id="contact">
+  <h2>Join Our Academy</h2>
+  <p>Contact us for admission information.</p>
+  <a class="btn" href="mailto:YOUR-EMAIL@example.com">
+    Contact Us
+  </a>
 </section>
 
 <footer>
   <p>© 2026 Noor International Quran Academy</p>
-  <p>All Rights Reserved.</p>
+  <p>Learn Quran Online</p>
 </footer>
 
 </body>
