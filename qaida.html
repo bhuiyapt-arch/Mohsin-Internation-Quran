@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8"><title>Noorani Qaida – নূরানী কায়দা</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:wght@600;700&display=swap">
+<style>
+
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#faf6ea;--tx:#1b2b27;--mu:#66736f;--sf:#fffdf6;--em:#0b4a43;--em2:#07302b;--gd:#b8923a;--gl:#e7c873;--t1:#fdecee;--t2:#e6f1fb;--t3:#fff4cf;--t4:#e3f4e8;--bd:#e3d6b0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0c1714;--tx:#f1ede0;--mu:#9fb0aa;--sf:#13231f;--gd:#e0b85a;--t1:#3a2229;--t2:#1d3248;--t3:#3c3519;--t4:#1b3a2b;--bd:#35462f}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0c1714;--tx:#f1ede0;--mu:#9fb0aa;--sf:#13231f;--gd:#e0b85a;--t1:#3a2229;--t2:#1d3248;--t3:#3c3519;--t4:#1b3a2b;--bd:#35462f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.hd{background:radial-gradient(circle at 20% 0,#12665c 0,var(--em) 40%,var(--em2) 100%);color:#fff;text-align:center;padding:26px 16px 22px;border-bottom:3px solid var(--gd)}
+.hd .t{font-family:Amiri,"Noto Naskh Arabic","Geeza Pro",serif;font-size:42px;line-height:1.3;color:var(--gl)}
+.hd .e{font-family:"Playfair Display",Georgia,serif;font-size:20px;letter-spacing:.5px}
+.hd .b{font-size:13px;opacity:.85;margin-top:2px}
+.wrap{max-width:780px;margin:0 auto;padding:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px}
+.chip{flex:0 0 auto;width:38px;height:38px;border-radius:50%;border:2px solid var(--bd);background:var(--sf);color:var(--tx);font-weight:700;cursor:pointer}
+.chip.on{background:var(--em);color:var(--gl);border-color:var(--gd)}
+.chip.dn{border-color:#2e9e6b}
+.pr{height:6px;background:var(--bd);border-radius:6px;overflow:hidden}.pr i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gd),var(--gl));transition:width .3s}
+.ls{margin:16px 0 10px;text-align:center}
+.ls .n{font-size:12px;letter-spacing:2px;color:var(--gd);font-weight:700}
+.ls .ar{font-family:Amiri,"Noto Naskh Arabic","Geeza Pro",serif;font-size:38px;color:var(--em)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ls .ar{color:var(--gl)}}
+:root[data-theme="dark"] .ls .ar{color:var(--gl)}
+.ls .en{font-family:"Playfair Display",Georgia,serif;font-size:20px}.ls .bn{color:var(--mu);font-size:15px}
+.rule{background:var(--sf);border:1px solid var(--bd);border-left:5px solid var(--gd);border-radius:12px;padding:12px 14px;margin:10px 0 14px;font-size:15px;line-height:1.55;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.rule small{display:block;color:var(--mu);font-size:14px;margin-top:4px}
+.ctl{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.tg{border:1px solid var(--gd);background:transparent;color:var(--tx);border-radius:20px;padding:7px 14px;font-size:13px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:560px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{border:2px solid var(--gd);outline:1px solid var(--bd);outline-offset:-6px;border-radius:20px 20px 12px 12px;padding:14px 8px;min-height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;color:var(--tx);font:inherit;box-shadow:0 3px 10px rgba(0,0,0,.07)}
+.card:nth-child(4n+1){background:var(--t1)}.card:nth-child(4n+2){background:var(--t3)}.card:nth-child(4n+3){background:var(--t2)}.card:nth-child(4n){background:var(--t4)}
+.card .a{font-family:Amiri,"Noto Naskh Arabic","Geeza Pro","Traditional Arabic",serif;font-size:38px;line-height:1.5;direction:rtl;white-space:pre-wrap}
+.card .r{display:none;font-size:13px;line-height:1.35;margin-top:4px;color:var(--mu)}.card .r b{display:block;color:var(--tx);font-size:15px}
+.card.open .r,.all .card .r{display:block}
+.line{grid-column:1/-1;flex-direction:column;padding:18px 12px}.line .a{font-size:34px}
+.nav{display:flex;gap:10px;margin:18px 0}
+.nav button{flex:1;padding:13px;border-radius:12px;border:1px solid var(--gd);background:var(--sf);color:var(--tx);font-size:15px;cursor:pointer}
+.nav .pm{background:var(--em);color:var(--gl);border-color:var(--gd);font-weight:700}
+.qz{margin-top:18px;background:var(--sf);border:2px solid var(--gd);border-radius:16px;padding:14px;text-align:center}.qh{font-family:"Playfair Display",Georgia,serif;color:var(--gd);font-size:17px;margin-bottom:4px}.qa{font-family:Amiri,"Noto Naskh Arabic","Geeza Pro",serif;font-size:50px;direction:rtl;line-height:1.5;white-space:pre-wrap;margin:4px 0 8px}.qo{display:grid;grid-template-columns:1fr 1fr;gap:8px}.qo button{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:10px;padding:12px 6px;font-size:15px;cursor:pointer}.qo .go{grid-column:1/-1;background:var(--em);color:var(--gl);border-color:var(--gd)}.qo .ok{background:#16a34a;color:#fff}.qo .no{background:#dc2626;color:#fff}.qs{margin-top:8px;font-size:14px;color:var(--mu)}
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}.wm{position:fixed;inset:0;pointer-events:none;z-index:50;background-repeat:repeat}.ft{text-align:center;color:var(--mu);font-size:12px;line-height:1.6;padding:6px 0 22px}@media print{body *{display:none!important}}
+
+[hidden]{display:none!important}
+input,textarea,.free{-webkit-user-select:text;user-select:text}
+.box{max-width:420px;margin:24px auto;background:var(--sf);border:2px solid var(--gd);border-radius:18px;padding:18px}
+.box h2{margin:0 0 4px;font-family:"Playfair Display",Georgia,serif;font-size:20px;color:var(--em)}
+.box .sub{font-size:13px;color:var(--mu);margin-bottom:12px}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.tabs button{flex:1;padding:10px;border-radius:10px;border:1px solid var(--gd);background:transparent;color:var(--tx);cursor:pointer;font-size:14px}
+.tabs .on{background:var(--em);color:var(--gl);font-weight:700}
+.box input,.adm input[type=text]{width:100%;padding:12px;margin:6px 0;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font-size:16px}
+.pbtn{width:100%;padding:13px;border-radius:12px;border:1px solid var(--gd);background:var(--em);color:var(--gl);font-weight:700;font-size:16px;cursor:pointer;margin-top:8px}
+.pbtn:disabled{opacity:.6}
+.msg{min-height:20px;font-size:14px;margin-top:8px;color:#dc2626;line-height:1.4}.msg.ok{color:#16a34a}
+.tb{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:12px 0;font-size:13px;color:var(--mu);word-break:break-all}
+.tb button{border:1px solid var(--gd);background:transparent;color:var(--tx);border-radius:16px;padding:6px 12px;font-size:13px;cursor:pointer;margin-left:6px;white-space:nowrap}
+.adm{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:14px;margin-bottom:14px}
+.adm h3{margin:0 0 8px;font-size:16px;color:var(--gd)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--bd);font-size:14px;word-break:break-all}
+.row button,.adm .sm{border:1px solid var(--gd);background:transparent;color:var(--tx);border-radius:14px;padding:6px 12px;font-size:13px;cursor:pointer;white-space:nowrap}
+.code{font:700 22px/1.5 ui-monospace,Menlo,monospace;letter-spacing:2px;text-align:center;margin-top:8px}
+</style></head><body>
+<div class="hd"><div class="t">القاعدة النورانية</div><div class="e">Noorani Qaida</div><div class="b">নূরানী কায়দা · Step by Step Quran Reading</div></div>
+<div class="wrap">
+
+<div id="auth" class="box">
+<h2>Teacher Login | শিক্ষক লগইন</h2>
+<div class="sub">Al-Hikmah Online Quran Academy – for teachers only | শুধু শিক্ষকদের জন্য</div>
+<div class="tabs"><button id="tl_" class="on">Login | লগইন</button><button id="tj_">Join with code | কোড দিয়ে যোগ দিন</button></div>
+<input id="em" type="email" placeholder="Email | ইমেইল" autocomplete="email">
+<input id="pw" type="password" placeholder="Password | পাসওয়ার্ড (min 8)" autocomplete="current-password">
+<input id="cd" type="text" placeholder="Invite code | আমন্ত্রণ কোড" autocomplete="off" hidden>
+<button id="go" class="pbtn">Login | লগইন</button>
+<div id="msg" class="msg"></div>
+</div>
+
+<div id="app" hidden>
+<div class="tb"><span id="who"></span><span><button id="admBtn" hidden>Admin</button><button id="out">Sign out | বের হোন</button></span></div>
+
+<div id="empty" class="rule" hidden>No lessons yet. | এখনও কোনো লেসন নেই।</div>
+
+<div id="adm" hidden>
+<div class="adm free"><h3>1. Upload lessons | লেসন আপলোড</h3>
+<input id="lf" type="file" accept=".json,application/json">
+<div id="lfm" class="msg ok"></div></div>
+<div class="adm free"><h3>2. New teacher code | নতুন শিক্ষকের কোড</h3>
+<input id="lb" type="text" placeholder="Teacher name | শিক্ষকের নাম">
+<button id="mk" class="pbtn">Create code | কোড বানান</button>
+<div id="nc" class="code free" hidden></div>
+<div id="il"></div></div>
+<div class="adm free"><h3>3. Teachers | শিক্ষকগণ</h3><div id="tl"></div></div>
+</div>
+
+<div id="lessons">
+<div class="chips" id="ch"></div><div class="pr"><i id="pg"></i></div>
+<div class="ls"><div class="n" id="ln"></div><div class="ar" id="la"></div><div class="en" id="le"></div><div class="bn" id="lb2"></div></div>
+<div class="rule" id="ru"></div>
+<div class="ctl"><span style="font-size:13px;color:var(--mu)">Tap a card to see the reading | কার্ডে ট্যাপ করুন</span><button class="tg" id="tg">Show all</button></div>
+<div class="grid" id="gr"></div>
+<div class="qz" id="qz"><div class="qh">Quick Quiz | কুইজ</div><div style="font-size:13px;color:var(--mu)">4 correct answers complete the lesson | ৪টি সঠিক উত্তরে লেসন সম্পূর্ণ</div><div class="qa" id="qa"></div><div class="qo" id="qo"></div><div class="qs" id="qs"></div></div>
+<div class="nav"><button id="pv">← Previous</button><button class="pm" id="dn">Done ✓</button><button id="nx">Next →</button></div>
+</div>
+
+<div class="ft">© Al-Hikmah Online Quran Academy. All rights reserved.<br>For teaching use only. Copying, recording or sharing is not permitted.<br>কপি, রেকর্ড বা শেয়ার করা নিষিদ্ধ।</div>
+</div>
+</div>
+<div class="wm" id="wm"></div>
+
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {getAuth,onAuthStateChanged,signInWithEmailAndPassword,createUserWithEmailAndPassword,signOut,deleteUser} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import {getFirestore,doc,getDoc,getDocs,collection,setDoc,updateDoc,writeBatch,onSnapshot,serverTimestamp,query,orderBy} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig={
+  apiKey:"AIzaSyCgWG-w9sJxSAbfM6GF726w2qSvpLjr4xE",
+  authDomain:"al-hikmah-kaida.firebaseapp.com",
+  projectId:"al-hikmah-kaida",
+  storageBucket:"al-hikmah-kaida.firebasestorage.app",
+  messagingSenderId:"937290959865",
+  appId:"1:937290959865:web:4df2fccd53adb813970b28"
+};
+const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);
+const $=i=>document.getElementById(i);
+let LS=[],cur=0,dn={},all=false,sc=0,tot=0,isAdm=false,unsub=null,busy=false,mode="login",note="";
+
+/* ---------- messages ---------- */
+function say(t,ok){const m=$("msg");m.textContent=t||"";m.className="msg"+(ok?" ok":"")}
+function errText(e){var c=(e&&e.code)||"";
+ if(c=="auth/invalid-credential"||c=="auth/wrong-password"||c=="auth/user-not-found"||c=="auth/invalid-email")return "Wrong email or password | ইমেইল বা পাসওয়ার্ড ভুল";
+ if(c=="auth/email-already-in-use")return "This email already has an account. Use Login | এই ইমেইলে অ্যাকাউন্ট আছে, লগইন করুন";
+ if(c=="auth/weak-password")return "Password must be at least 8 characters | পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে";
+ if(c=="app/code"||c=="permission-denied")return "Invalid or already used code | কোডটি ভুল বা আগেই ব্যবহার হয়েছে";
+ if(c=="auth/too-many-requests")return "Too many attempts. Try later | অনেকবার চেষ্টা করেছেন, পরে আবার চেষ্টা করুন";
+ if(c=="auth/network-request-failed")return "No internet | ইন্টারনেট নেই";
+ if(c=="auth/operation-not-allowed")return "Email/Password sign-in is not enabled in Firebase.";
+ return "Something went wrong ("+(c||"error")+")"}
+
+/* ---------- screens ---------- */
+function showAuth(t){$("app").hidden=true;$("auth").hidden=false;$("wm").style.backgroundImage="none";LS=[];if(unsub){unsub();unsub=null}$("pw").value="";say(t||"")}
+function setMode(m){mode=m;$("tl_").className=m=="login"?"on":"";$("tj_").className=m=="join"?"on":"";$("cd").hidden=m!="join";$("go").textContent=m=="login"?"Login | লগইন":"Create my account | অ্যাকাউন্ট খুলুন";$("pw").autocomplete=m=="login"?"current-password":"new-password";say("")}
+$("tl_").onclick=()=>setMode("login");$("tj_").onclick=()=>setMode("join");
+
+/* ---------- auth ---------- */
+async function join(email,pw,raw){
+ const code=String(raw||"").toUpperCase().replace(/[^A-Z0-9]/g,"");
+ if(code.length<8)throw {code:"app/code"};
+ if(pw.length<8)throw {code:"auth/weak-password"};
+ busy=true;let u=null;
+ try{
+  u=(await createUserWithEmailAndPassword(auth,email,pw)).user;
+  const b=writeBatch(db);
+  b.update(doc(db,"invites",code),{used:true,usedBy:u.uid,usedAt:serverTimestamp()});
+  b.set(doc(db,"teachers",u.uid),{email:u.email,code:code,active:true,role:"teacher",createdAt:serverTimestamp()});
+  await b.commit();
+ }catch(e){
+  if(u){try{await deleteUser(u)}catch(_){try{await signOut(auth)}catch(__){}}}
+  throw (u&&e&&e.code=="permission-denied")?{code:"app/code"}:e;
+ }finally{busy=false}
+ await enter(auth.currentUser);
+}
+$("go").onclick=async()=>{
+ const email=$("em").value.trim(),pw=$("pw").value;
+ if(!email||!pw){say("Enter email and password | ইমেইল ও পাসওয়ার্ড দিন");return}
+ $("go").disabled=true;say("");
+ try{ if(mode=="login")await signInWithEmailAndPassword(auth,email,pw); else await join(email,pw,$("cd").value) }
+ catch(e){say(errText(e))}
+ $("go").disabled=false};
+onAuthStateChanged(auth,u=>{if(busy)return;if(u)enter(u);else{showAuth(note);note=""}});
+$("out").onclick=()=>signOut(auth);
+
+async function loadLessons(){
+ const s=await getDocs(query(collection(db,"lessons"),orderBy("order")));
+ LS=s.docs.map(d=>{const x=d.data();x.d=(x.d||[]).map(i=>[i.ar,i.lt,i.bn]);return x});
+ cur=0;dn={};if(LS.length)draw()}
+async function enter(u){
+ try{
+  const [a,t]=await Promise.all([getDoc(doc(db,"admins",u.uid)),getDoc(doc(db,"teachers",u.uid))]);
+  isAdm=a.exists();
+  if(!isAdm&&!(t.exists()&&t.data().active===true)){note="Your access is not active. Please contact the academy. | আপনার অ্যাক্সেস চালু নেই, একাডেমির সাথে যোগাযোগ করুন।";await signOut(auth);return}
+  await loadLessons();
+  $("auth").hidden=true;$("app").hidden=false;$("who").textContent=u.email;$("admBtn").hidden=!isAdm;wm(u.email);
+  view(isAdm&&!LS.length?"admin":"lessons");
+  if(unsub){unsub();unsub=null}
+  if(!isAdm)unsub=onSnapshot(doc(db,"teachers",u.uid),s=>{if(s.exists()&&s.data().active===false){note="Your access has been removed. | আপনার অ্যাক্সেস বন্ধ করা হয়েছে।";signOut(auth)}});
+ }catch(e){note=errText(e);try{await signOut(auth)}catch(_){showAuth(note)}}}
+function view(v){const a=v=="admin";$("adm").hidden=!a;$("lessons").hidden=a||!LS.length;$("empty").hidden=a||!!LS.length;$("admBtn").textContent=a?"Lessons":"Admin";if(a)refreshAdmin()}
+$("admBtn").onclick=()=>view($("adm").hidden?"admin":"lessons");
+
+/* ---------- admin ---------- */
+function row(p,text,bt,fn){const r=document.createElement("div");r.className="row";const s=document.createElement("span");s.textContent=text;r.appendChild(s);if(bt){const b=document.createElement("button");b.textContent=bt;b.onclick=fn;r.appendChild(b)}p.appendChild(r)}
+async function refreshAdmin(){
+ const tl=$("tl"),il=$("il");tl.textContent="Loading…";il.textContent="";
+ try{
+  const [ts,is]=await Promise.all([getDocs(collection(db,"teachers")),getDocs(collection(db,"invites"))]);
+  tl.textContent="";il.textContent="";
+  if(ts.empty)tl.textContent="No teachers yet | এখনও কেউ নেই";
+  ts.forEach(d=>{const x=d.data();row(tl,(x.active?"🟢 ":"🔴 ")+x.email,x.active?"Disable":"Enable",async()=>{await updateDoc(doc(db,"teachers",d.id),{active:!x.active});refreshAdmin()})});
+  is.forEach(d=>{const x=d.data();row(il,(x.used?"✅ used · ":"🆕 unused · ")+(x.label||"")+" · "+d.id)});
+ }catch(e){tl.textContent="Error: "+(e.code||e.message)}}
+function newCode(){const A="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",r=new Uint32Array(12);crypto.getRandomValues(r);return Array.from(r,n=>A[n%A.length]).join("")}
+$("mk").onclick=async()=>{
+ const label=$("lb").value.trim();if(!label){$("nc").hidden=false;$("nc").textContent="Enter teacher name | শিক্ষকের নাম লিখুন";return}
+ try{const c=newCode();await setDoc(doc(db,"invites",c),{label:label,used:false,createdAt:serverTimestamp()});
+  $("nc").hidden=false;$("nc").textContent=c.match(/.{4}/g).join("-");$("lb").value="";refreshAdmin()}
+ catch(e){$("nc").hidden=false;$("nc").textContent="Error: "+(e.code||e.message)}};
+$("lf").onchange=async e=>{
+ const f=e.target.files[0];if(!f)return;const m=$("lfm");m.className="msg ok";m.textContent="Uploading…";
+ try{
+  const arr=JSON.parse(await f.text());if(!Array.isArray(arr)||!arr.length)throw {message:"Bad file"};
+  const b=writeBatch(db);
+  arr.forEach(l=>b.set(doc(db,"lessons",l.id),{order:l.order,a:l.a,e:l.e,b:l.b,r:l.r,l:l.l||0,d:l.d}));
+  await b.commit();await loadLessons();m.textContent="Done: "+arr.length+" lessons uploaded | "+arr.length+"টি লেসন আপলোড হয়েছে ✓"}
+ catch(x){m.className="msg";m.textContent="Error: "+(x.code||x.message)}
+ e.target.value=""};
+
+/* ---------- watermark & protection ---------- */
+function wm(t){t=String(t||"").replace(/[<>&"']/g,"").slice(0,50)||"Al-Hikmah";
+ var s='<svg xmlns="http://www.w3.org/2000/svg" width="440" height="210"><text x="20" y="125" transform="rotate(-25 220 105)" font-family="sans-serif" font-size="16" fill="rgba(128,128,128,0.17)">Licensed to: '+t+' | Al-Hikmah</text></svg>';
+ $("wm").style.backgroundImage='url("data:image/svg+xml,'+encodeURIComponent(s)+'")'}
+const free=e=>{const t=e.target;return t&&t.closest&&t.closest("input,textarea,.free")};
+["contextmenu","copy","cut","dragstart","selectstart"].forEach(t=>document.addEventListener(t,e=>{if(!free(e))e.preventDefault()}));
+document.addEventListener("keydown",e=>{if(free(e))return;if((e.ctrlKey||e.metaKey)&&"cxpsua".indexOf(e.key.toLowerCase())>-1)e.preventDefault()});
+
+/* ---------- lessons (same behaviour as before) ---------- */
+function q(){var d=LS[cur].d,a=d[Math.floor(Math.random()*d.length)],o=[a[1]],g=0;while(o.length<Math.min(4,d.length)&&g++<80){var r=d[Math.floor(Math.random()*d.length)][1];if(o.indexOf(r)<0)o.push(r)}o.sort(function(){return Math.random()-.5});$("qa").textContent=a[0];$("qs").textContent="Score: "+sc+"/"+tot;var w=$("qo");w.innerHTML="";o.forEach(function(v){var b=document.createElement("button");b.textContent=v;b.onclick=function(){var ok=v==a[1];tot++;if(ok)sc++;b.className=ok?"ok":"no";Array.prototype.forEach.call(w.children,function(x){x.disabled=true;if(x.textContent==a[1])x.className="ok"});var m="Score: "+sc+"/"+tot;if(sc>=4&&!dn[cur]){dn[cur]=1;chips();$("dn").textContent="Done ✓ (undo)";m+=" – Lesson complete! 🎉"}$("qs").textContent=m;var n=document.createElement("button");n.className="go";n.textContent="Next question →";n.onclick=q;w.appendChild(n)};w.appendChild(b)})}
+function chips(){var c=$("ch");c.innerHTML="";LS.forEach(function(s,i){var b=document.createElement("button");b.className="chip"+(i==cur?" on":"")+(dn[i]?" dn":"");b.textContent=dn[i]?"✓":i+1;b.onclick=function(){cur=i;draw()};c.appendChild(b)});$("pg").style.width=Object.keys(dn).length/LS.length*100+"%"}
+function draw(){chips();var s=LS[cur];$("ln").textContent="LESSON "+(cur+1)+" / "+LS.length;$("la").textContent=s.a;$("le").textContent=s.e;$("lb2").textContent=s.b;$("ru").innerHTML=s.r[0]+"<small>"+s.r[1]+"</small>";var g=$("gr");g.innerHTML="";g.className="grid"+(all?" all":"");s.d.forEach(function(x){var b=document.createElement("button");b.className="card"+(s.l?" line":"");b.innerHTML='<div class="a">'+x[0]+'</div><div class="r"><b>'+x[1]+"</b>"+x[2]+"</div>";b.onclick=function(){b.classList.toggle("open")};g.appendChild(b)});$("dn").textContent=dn[cur]?"Done ✓ (undo)":"Mark done ✓";$("pv").disabled=cur==0;$("nx").disabled=cur==LS.length-1;sc=0;tot=0;var hq=!s.l;$("qz").style.display=hq?"":"none";if(hq)q();window.scrollTo(0,0)}
+$("tg").onclick=function(){all=!all;$("tg").textContent=all?"Hide all":"Show all";$("gr").className="grid"+(all?" all":"")};
+$("pv").onclick=function(){if(cur>0){cur--;draw()}};$("nx").onclick=function(){if(cur<LS.length-1){cur++;draw()}};
+$("dn").onclick=function(){if(dn[cur])delete dn[cur];else{dn[cur]=1;if(cur<LS.length-1)cur++}draw()};
+</script>
+</body></html>
