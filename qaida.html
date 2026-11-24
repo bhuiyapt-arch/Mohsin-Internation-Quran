@@ -219,8 +219,9 @@ $("lf").onchange=async e=>{
  e.target.value=""};
 
 /* ---------- watermark & protection ---------- */
-function wm(t){t=String(t||"").replace(/[<>&"']/g,"").slice(0,50)||"Al-Hikmah";
- var s='<svg xmlns="http://www.w3.org/2000/svg" width="440" height="210"><text x="20" y="125" transform="rotate(-25 220 105)" font-family="sans-serif" font-size="16" fill="rgba(128,128,128,0.17)">Licensed to: '+t+' | Al-Hikmah</text></svg>';
+const SHOW_WATERMARK=true; /* true = show the email watermark again */
+function wm(t){if(!SHOW_WATERMARK){$("wm").style.backgroundImage="none";return}t=String(t||"").replace(/[<>&"']/g,"").slice(0,50)||"Al-Hikmah";
+ var s='<svg xmlns="http://www.w3.org/2000/svg" width="420" height="160"><text x="16" y="95" transform="rotate(-25 210 80)" font-family="sans-serif" font-size="11" fill="rgba(128,128,128,0.09)">Licensed to: '+t+' | Al-Hikmah</text></svg>';
  $("wm").style.backgroundImage='url("data:image/svg+xml,'+encodeURIComponent(s)+'")'}
 const free=e=>{const t=e.target;return t&&t.closest&&t.closest("input,textarea,.free")};
 ["contextmenu","copy","cut","dragstart","selectstart"].forEach(t=>document.addEventListener(t,e=>{if(!free(e))e.preventDefault()}));
